@@ -234,8 +234,25 @@ div > p {
 ```html
 [วางโค้ดที่นี่]
 ```
-[บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css"> <!-- เชื่อมโยงไฟล์ CSS -->
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#" class="menu-item">หน้าแรก</a></li>
+            <li><a href="#" class="menu-item" id="active">สินค้า</a></li> <!-- เมนู 'สินค้า' ถูกเลือก -->
+            <li><a href="#" class="menu-item">เกี่ยวกับเรา</a></li>
+            <li><a href="#" class="menu-item">ติดต่อ</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
 
+[บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+![alt text](image.png)
 
 [](#การทดลองที่-3-การจัดการสีและพื้นหลัง)
 ## การทดลองที่ 3: การจัดการสีและพื้นหลัง
@@ -340,7 +357,59 @@ background-size: cover;
 ```html
 [วางโค้ดที่นี่]
 ```
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style2.css"> <!-- เชื่อมโยงไฟล์ CSS -->
+</head>
+<body>
+    <div class="product-container">
+        <div class="product-card">
+            <div class="product-image" style="background-image: url('images/product1.jpg');"></div>
+            <div class="product-info">
+                <h2 class="product-title">สินค้าตัวอย่าง 1</h2>
+                <p class="product-price">฿1,999</p>
+                <p class="product-description">รายละเอียดสินค้าตัวอย่าง 1 ที่มีความน่าสนใจและน่าใช้งาน</p>
+                <a href="#" class="product-button">เพิ่มลงตะกร้า</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image" style="background-image: url('images/product2.jpg');"></div>
+            <div class="product-info">
+                <h2 class="product-title">สินค้าตัวอย่าง 2</h2>
+                <p class="product-price">฿2,499</p>
+                <p class="product-description">รายละเอียดสินค้าตัวอย่าง 2 ที่มีคุณสมบัติพิเศษ</p>
+                <a href="#" class="product-button">เพิ่มลงตะกร้า</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image" style="background-image: url('images/product3.jpg');"></div>
+            <div class="product-info">
+                <h2 class="product-title">สินค้าตัวอย่าง 3</h2>
+                <p class="product-price">฿3,499</p>
+                <p class="product-description">รายละเอียดสินค้าตัวอย่าง 3 ที่มีความทนทานและคุ้มค่า</p>
+                <a href="#" class="product-button">เพิ่มลงตะกร้า</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image" style="background-image: url('images/product4.jpg');"></div>
+            <div class="product-info">
+                <h2 class="product-title">สินค้าตัวอย่าง 4</h2>
+                <p class="product-price">฿4,999</p>
+                <p class="product-description">รายละเอียดสินค้าตัวอย่าง 4 ที่มีฟังก์ชันหลากหลายและดีไซน์สวยงาม</p>
+                <a href="#" class="product-button">เพิ่มลงตะกร้า</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
 [บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+![alt text](image-1.png)
 
 [](#การทดลองที่-4-การจัดการขนาดและระยะห่าง)
 ## การทดลองที่ 4: การจัดการขนาดและระยะห่าง
@@ -438,10 +507,86 @@ border: 1px solid black;
 ```html
 [วางโค้ด HTML ที่นี่]
 ```
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css"> <!-- เชื่อมโยงไฟล์ CSS -->
+</head>
+<body>
+    <div class="stats-container">
+        <div class="stat-box">
+            <div class="stat-number">1,234</div>
+            <div class="stat-label">ผู้ใช้งาน</div>
+        </div>
+        <div class="stat-box">
+            <div class="stat-number">5.6K</div>
+            <div class="stat-label">ยอดขาย</div>
+        </div>
+        <div class="stat-box">
+            <div class="stat-number">98%</div>
+            <div class="stat-label">ความพึงพอใจ</div>
+        </div>
+    </div>
+</body>
+</html>
+
 ```css
 [วางโค้ด CSS ที่นี่]
 ```
+.stats-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+
+.stat-box {
+    flex: 1;
+    margin: 0 15px;
+    padding: 2rem;
+    text-align: center;
+    background-color: #f4f6f9; /* เปลี่ยนสีพื้นหลัง */
+    border-radius: 12px; /* ปรับรัศมีมุมให้โค้งมากขึ้น */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* ปรับเงาของกล่องให้ใหญ่ขึ้น */
+    transition: all 0.3s ease-in-out; /* เพิ่มการเปลี่ยนแปลงเมื่อ hover */
+}
+
+.stat-box:hover {
+    transform: translateY(-5px); /* เมื่อ hover จะยกกล่องขึ้น */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* เพิ่มเงาเมื่อ hover */
+}
+
+
+.stat-number {
+    font-size: 3rem; /* ปรับขนาดตัวเลขให้ใหญ่ขึ้น */
+    font-weight: 700; /* เพิ่มความหนาให้ตัวเลข */
+    color: #3b82f6; /* เปลี่ยนสีให้เป็นสีน้ำเงิน */
+    margin-bottom: 1rem;
+}
+
+
+.stat-label {
+    font-size: 1.2rem; /* เพิ่มขนาดฟอนต์ให้ใหญ่ขึ้น */
+    color: #4b5563; /* สีเทา */
+    text-transform: uppercase; /* ตัวอักษรเป็นตัวพิมพ์ใหญ่ทั้งหมด */
+    letter-spacing: 2px; /* เพิ่มการเว้นระยะระหว่างตัวอักษร */
+}
+
+
+@media (max-width: 768px) {
+    .stats-container {
+        flex-direction: column;
+    }
+
+    .stat-box {
+        margin: 1rem 0;
+    }
+}
+
 [บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+![alt text](image-2.png)
 
 [](#การทดลองที่-5-การจัดการข้อความและฟอนต์)
 ## การทดลองที่ 5: การจัดการข้อความและฟอนต์
@@ -556,10 +701,111 @@ font-weight: bold;
 ```html
 [วางโค้ด HTML ที่นี่]
 ```
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>วิธีการเขียนบทความที่น่าสนใจ</title>
+    <link rel="stylesheet" href="style.css"> <!-- เชื่อมโยงไฟล์ CSS -->
+</head>
+<body>
+    <article class="blog-post">
+        <header class="post-header">
+            <h1 class="post-title">วิธีการเขียนบทความที่น่าสนใจ</h1>
+            <div class="post-meta">โพสต์เมื่อ 1 มกราคม 2025 | โดย ผู้เขียน</div>
+        </header>
+        
+        <div class="post-content">
+            <p>เนื้อหาบทความที่ดีควรมีความน่าสนใจและเป็นประโยชน์ต่อผู้อ่าน การเขียนบทความให้น่าอ่านนั้นมีหลักการสำคัญหลายประการ</p>
+
+            <h2>1. การเลือกหัวข้อที่น่าสนใจ</h2>
+            <p>หัวข้อที่ดีควรตรงกับความสนใจของกลุ่มเป้าหมาย และมีประโยชน์ต่อผู้อ่าน</p>
+
+            <blockquote>
+                "การเขียนที่ดีไม่ได้เกิดจากพรสวรรค์เพียงอย่างเดียว แต่เกิดจากการฝึกฝนอย่างสม่ำเสมอ"
+            </blockquote>
+
+            <h2>2. การจัดโครงสร้างเนื้อหา</h2>
+            <p>เนื้อหาที่ดีควรมีการจัดลำดับที่เป็นระบบ เข้าใจง่าย และมีความต่อเนื่อง</p>
+        </div>
+    </article>
+</body>
+</html>
+
 ```css
 [วางโค้ด CSS ที่นี่]
 ```
+.blog-post {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    font-family: 'Sarabun', sans-serif; 
+    background-color: #f9f9f9; 
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+}
+
+.post-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.post-title {
+    font-size: 2.5rem; 
+    color: #333; 
+    margin-bottom: 0.5rem;
+    line-height: 1.3;
+}
+
+.post-meta {
+    color: #777; 
+    font-size: 0.9rem;
+    text-transform: uppercase; 
+    letter-spacing: 1px;
+}
+
+.post-content {
+    font-size: 1.2rem; 
+    line-height: 1.8; 
+    color: #444; 
+}
+
+.post-content p {
+    margin-bottom: 1.5rem; 
+}
+
+.post-content h2 {
+    font-size: 1.8rem; 
+    color: #333; 
+    margin: 2rem 0 1rem;
+}
+
+blockquote {
+    font-style: italic; 
+    border-left: 4px solid #007bff; 
+    margin: 1.5rem 0;
+    padding-left: 1rem;
+    color: #555; 
+    font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+    .post-title {
+        font-size: 2rem; 
+    }
+
+    .post-content {
+        font-size: 1.1rem; 
+    }
+
+    blockquote {
+        font-size: 1.1rem; 
+    }
+}
+
 [บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+![alt text](image-3.png)
 
 [](#การทดลองที่-6-Layout-และการจัดวางอิลิเมนต์)
 ## การทดลองที่ 6: Layout และการจัดวางอิลิเมนต์

@@ -1,0 +1,51 @@
+.stats-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+
+.stat-box {
+    flex: 1;
+    margin: 0 15px;
+    padding: 2rem;
+    text-align: center;
+    background-color: #f4f6f9; /* เปลี่ยนสีพื้นหลัง */
+    border-radius: 12px; /* ปรับรัศมีมุมให้โค้งมากขึ้น */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* ปรับเงาของกล่องให้ใหญ่ขึ้น */
+    transition: all 0.3s ease-in-out; /* เพิ่มการเปลี่ยนแปลงเมื่อ hover */
+}
+
+.stat-box:hover {
+    transform: translateY(-5px); /* เมื่อ hover จะยกกล่องขึ้น */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* เพิ่มเงาเมื่อ hover */
+}
+
+
+.stat-number {
+    font-size: 3rem; /* ปรับขนาดตัวเลขให้ใหญ่ขึ้น */
+    font-weight: 700; /* เพิ่มความหนาให้ตัวเลข */
+    color: #3b82f6; /* เปลี่ยนสีให้เป็นสีน้ำเงิน */
+    margin-bottom: 1rem;
+}
+
+
+.stat-label {
+    font-size: 1.2rem; /* เพิ่มขนาดฟอนต์ให้ใหญ่ขึ้น */
+    color: #4b5563; /* สีเทา */
+    text-transform: uppercase; /* ตัวอักษรเป็นตัวพิมพ์ใหญ่ทั้งหมด */
+    letter-spacing: 2px; /* เพิ่มการเว้นระยะระหว่างตัวอักษร */
+}
+
+
+@media (max-width: 768px) {
+    .stats-container {
+        flex-direction: column;
+    }
+
+    .stat-box {
+        margin: 1rem 0;
+    }
+}

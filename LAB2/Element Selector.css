@@ -1,0 +1,23 @@
+p { color: red; }  /* เลือกทุก <p> elements */
+h1 { color: blue; }  /* เลือกทุก <h1> elements */
+
+.menu { color: green; }  /* เลือก elements ที่มี class="menu" */
+.highlight { background: yellow; }
+
+#header { background: black; }  /* เลือก element ที่มี id="header" */
+#logo { width: 100px; }
+
+div p { color: blue; }  /* เลือก <p> ที่อยู่ภายใน <div> */
+
+div > p { color: red; }  /* เลือก <p> ที่เป็นลูกโดยตรงของ <div> */
+
+a:hover { color: red; }  /* เมื่อเมาส์ชี้ */
+input:focus { border: blue; }  /* เมื่อได้รับการโฟกัส */
+
+h1, h2, h3 { color: purple; }
+
+* { margin: 0; padding: 0; }
+
+input[type="text"] { border: 1px solid gray; }
+
+h1 + p { margin-top: 20px; }
